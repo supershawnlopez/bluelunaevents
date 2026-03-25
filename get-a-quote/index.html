@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get a Quote | Blue Luna Events</title>
+  <meta name="description" content="Request a custom event quote from Blue Luna Events in Tucson, Arizona." />
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/config.js"></script>
+  <script defer src="/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand-mark" href="/"><img src="/images/logo-white.png" alt="Blue Luna Events"></a>
+      <nav class="nav-links">
+        <a href="/#packages">Packages</a>
+        <a href="/#experience">Styled Photo</a>
+        <a href="/#corporate">Corporate</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/get-a-quote/" class="nav-cta">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="quote-page">
+    <section class="section quote-hero">
+      <div class="container quote-grid">
+        <div>
+          <p class="eyebrow dark">Custom quote path</p>
+          <h1>Tell Blue Luna what you need.</h1>
+          <p class="section-copy left">Use this for custom installs, larger events, branded corporate work, or any package you want adjusted before booking.</p>
+          <div class="support-card">
+            <h3>Fastest booking path</h3>
+            <p>If you already know the package you want, paying the deposit is the fastest route to reserve your date.</p>
+            <ul class="check-list compact">
+              <li>50% deposit secures your date</li>
+              <li>Final balance due one week before the event</li>
+              <li>Texts usually move faster than email</li>
+            </ul>
+            <div class="support-actions">
+              <a id="quote-phone-link" href="tel:+15202226142" class="btn btn-primary">Call (520) 222-6142</a>
+              <a id="quote-email-link" href="mailto:monica@bluelunaevents.com" class="btn btn-secondary btn-dark-text">Email Monica</a>
+            </div>
+          </div>
+        </div>
+        <form name="blue-luna-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/" class="quote-form">
+          <input type="hidden" name="form-name" value="blue-luna-quote" />
+          <input type="hidden" name="bot-field" />
+          <div class="field-grid">
+            <label>Full name<input name="fullName" type="text" required></label>
+            <label>Phone<input name="phone" type="tel" required></label>
+          </div>
+          <div class="field-grid">
+            <label>Email<input name="email" type="email" required></label>
+            <label>Event date<input name="eventDate" type="date"></label>
+          </div>
+          <div class="field-grid">
+            <label>Event type<select name="eventType"><option value="">Select one</option><option>Graduation</option><option>Birthday</option><option>Quinceañera</option><option>Wedding</option><option>Baby Shower</option><option>Corporate Event</option><option>Other</option></select></label>
+            <label>Package or service<input id="packageField" name="package" type="text" placeholder="Essential Celebration, Styled Photo Experience, etc."></label>
+          </div>
+          <label>Event location<input name="location" type="text" placeholder="Venue or address"></label>
+          <div class="field-grid">
+            <label>Estimated budget<select name="budget"><option value="">Select one</option><option>Under $500</option><option>$500–$1,000</option><option>$1,000–$2,000</option><option>$2,000+</option></select></label>
+            <label>Guest count (optional)<input name="guestCount" type="text"></label>
+          </div>
+          <label>What are you envisioning?<textarea name="vision" rows="6" placeholder="Balloon garland, backdrop, colors, selfie station, corporate branding, timing, anything important..."></textarea></label>
+          <button class="btn btn-primary form-submit" type="submit">Send Quote Request</button>
+          <p class="form-note">This form is Netlify-ready. Once deployed, submissions can go straight into Netlify Forms.</p>
+        </form>
+      </div>
+    </section>
+    <section class="section soft-section">
+      <div class="container quote-bottom">
+        <div><p class="eyebrow dark">Quick note</p><h2>Package-first is still the best conversion path.</h2></div>
+        <p class="section-copy left">The quote page exists for custom work. The homepage should keep doing the heavy lifting by pushing ready-to-buy clients into package deposits first.</p>
+        <a href="/" class="inline-link">Back to homepage</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
