@@ -1,1 +1,12 @@
-body{font-family:Arial;margin:0} .hero{text-align:center;padding:40px} .btn{padding:10px 15px} .primary{background:#111;color:#fff}
+body{font-family:Helvetica,Arial;margin:0;background:#fff;color:#111}
+.hero{height:70vh;background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://images.unsplash.com/photo-1529634890101-4a5c3b63a8c0');background-size:cover;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center}
+.overlay{max-width:600px}
+.section{padding:60px 20px;text-align:center}
+.cards{display:flex;justify-content:center;flex-wrap:wrap}
+.card{border:1px solid #eee;padding:20px;margin:10px;width:260px;border-radius:8px}
+.featured{border:2px solid #000}
+.btn{padding:12px 18px;text-decoration:none;border-radius:6px;display:inline-block;margin-top:10px}
+.primary{background:#000;color:#fff}
+.secondary{border:1px solid #fff;color:#fff}
+.dark{background:#111;color:#fff}
+.steps{display:flex;justify-content:center;gap:20px}
